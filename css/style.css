@@ -2,12 +2,14 @@
 body{
 	background-color:#949CA1;
 	color:#fff;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Boton*/
 .boton{
 	border:2px solid #fff;
 	border-radius: 3px;
+	cursor:pointer;
 	padding: 0.1em 1.5em 0.2em
 }
 
@@ -33,7 +35,6 @@ body{
 }
 
 /*Logo*/
-
 .logo{
 	height: 100vh;
 	display: flex;
@@ -44,4 +45,51 @@ body{
 
 .logo__item{
 	text-align: center;
+}
+
+/*modal*/
+.modal{
+	top:30vh!important;
+}
+
+.modal-header{
+	border-bottom: 0px;
+	padding-bottom: 0px!important;
+}
+
+.modal-body{
+	padding-top: 0!important;
+	padding-bottom: 4em;
+}
+
+.modal-body h3{
+	font-weight: 600;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 10px!important;
+}
+
+.modal-header .close {
+    opacity: 1!important;
+    margin-top: 0px;
+    margin-right: 20px;
+    text-shadow: 0 0px 0 #fff!important;
+    background-color: #4D5357;
+    height: 30px;
+    width: 30px;
+    font-size: 2em;
+    font-weight: 200;
+    color:#fff;
+    border-radius: 50%;
+}
+
+.modal-dialog {
+    width: 700px!important;
+}
+
+.modal-content{
+	background-color: #949CA1;
+	border:2px solid #fff;
+	border-radius: 50px;
 }
