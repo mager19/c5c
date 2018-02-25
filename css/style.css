@@ -8,7 +8,16 @@ body{
 .boton{
 	border:2px solid #fff;
 	border-radius: 3px;
-	padding: 0.3em 1.5em;
+	padding: 0.1em 1.5em 0.2em
+}
+
+.boton:hover{
+	background-color: #fff;
+	border-color:#949CA1;
+}
+
+.boton:hover a{
+	color:#949CA1;
 }
 
 .boton a{
@@ -21,4 +30,18 @@ body{
 	position: absolute;
 	top: 5%;
 	right:2%;
+}
+
+/*Logo*/
+
+.logo{
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.logo__item{
+	text-align: center;
 }
