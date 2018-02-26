@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cero5Cien</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -21,7 +22,7 @@
 <section class="logo">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-xs-12">
 				<div class="logo__item">
 					<img src="img/logo.png" alt="">
 				</div>
@@ -42,12 +43,17 @@
       <div class="modal-body">
    	  	<div class="row">
    	  		 <h3>ENTRAR A VER LOS AVANCES DEL CONJUNTO</h3>
-    		<div class="col-md-10 col-md-offset-1" style="color:red;">
-    			<form action="#">
-    				<label for="#">Correo Registrado</label>
-    				<input type="text">
-    				<label for="#">Correo Registrado</label>
-    				<input type="text">
+    		<div class="col-md-10 col-md-offset-1 col-xs-12">
+
+				<form action="#">
+    				<div class="form-group">						
+						<label for="#">Correo Registrado</label>
+	    				<input type="text" placeholder="johndoe@mail.com"><i class="glyphicon glyphicon-user"></i></input>	    				
+    				</div>
+    				<div class="form-group">	
+    					<label for="#">Contraseña</label>
+    					<input type="password" placeholder="*********"><i class="glyphicon glyphicon-lock"></i>
+    				</div>
     				<h4><a href="#">Olvide mi contraseña</a></h4>
     				<button>Entrar</button>
     			</form>
