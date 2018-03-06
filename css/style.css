@@ -1,18 +1,32 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham.otf);
+}
 
 body{
-	background-color:#949CA1;
+	background-image: url(../img/TexturaArbolada.png);
 	color:#fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Gotham', sans-serif;
 	overflow-x: hidden;
-	overflow-y: hidden;
+}
+
+.contenedor{
+	padding: 2em 0;
+}
+
+.body_internas{
+	background-color: #fff;
 }
 
 /*Boton*/
 .boton{
+	background-color: #4D5357;
 	border:2px solid #fff;
-	border-radius: 3px;
+	border-radius: 5px;
 	cursor:pointer;
-	padding: 0.1em 1.5em 0.2em
+	padding: 0.8em 1.5em;
+	margin-top:4em;
+	text-align: center;
 }
 
 .boton:hover{
@@ -26,14 +40,7 @@ body{
 
 .boton a{
 	color:#fff;
-	font-size: 0.6em;
-}
-
-/*Boton Header*/
-.header__boton{
-	position: absolute;
-	top: 5%;
-	right:2%;
+	font-size:1.4em;
 }
 
 /*Logo*/
@@ -54,6 +61,10 @@ body{
 	top:25vh!important;
 }
 
+.modal2{
+	top:5vh!important;
+}
+
 .modal-header{
 	border-bottom: 0px;
 	padding-bottom: 0px!important;
@@ -62,6 +73,14 @@ body{
 .modal-body{
 	padding-top: 0!important;
 	padding-bottom: 4em;
+}
+
+.modal3 .modal-body{
+	padding-bottom: 5em;
+}
+
+.modal4 .modal-body{
+	padding-bottom:7em;
 }
 
 .modal-body h3{
@@ -75,11 +94,25 @@ body{
 .modal-header .close {
     opacity: 1!important;
     margin-top: 0px;
-    margin-right: 20px;
+    margin-right: -2em;
+    text-shadow: 0 0px 0 #fff!important;
+    background-color: #B4B4B4;
+    height: 50px;
+    width: 50px;
+    font-size: 3em;
+    font-weight: 200;
+    color:#fff;
+    border-radius: 50%;
+}
+
+.modal-header .closepeque {
+    opacity: 1!important;
+    margin-top: 0px!important;
+    margin-right: 10px!important;
     text-shadow: 0 0px 0 #fff!important;
     background-color: #4D5357;
-    height: 30px;
-    width: 30px;
+    height: 30px!important;
+    width: 30px!important;
     font-size: 2em;
     font-weight: 200;
     color:#fff;
@@ -87,7 +120,7 @@ body{
 }
 
 .modal-dialog {
-    width: 700px!important;
+    width: 800px!important;
 }
 
 .modal-content{
@@ -98,10 +131,6 @@ body{
 }
 
 /*form*/
-.modal-body form{
-	margin-top: 1em;
-}
-
 .modal-body form input{
 	border-radius: 20px;
 	border:2px solid #4d4d4d;
@@ -127,6 +156,13 @@ body{
 	margin-left: 35%;
 }
 
+.modal3 .modal-body form h4 , .modal4 .modal-body form h4 {
+	color:#fff;
+	font-size: 0.9em;
+    padding: 0.8em 0;
+    text-align: center;
+}
+
 .modal-body form button{
 	background-color: #4D5357;
 	border:0px;
@@ -134,7 +170,25 @@ body{
 	font-size: 0.7em;
 	padding: 1em 3em;
 	position: absolute;
-	right: 20%;
+	box-shadow: 0px 3px 6px #4D5357;
+}
+
+.modal4 .modal-body h3{
+	padding-top: 1em;
+}
+
+.modal4 .modal-body form h4 {
+	margin:1.1em 0;
+}
+
+.modal-body form button a{
+	color:#fff;
+}
+
+.modal-body img{
+	margin-left: 30%;
+	margin-top: -5%;
+	width: 40%;
 }
 
 .form-group{
@@ -154,16 +208,104 @@ input::-webkit-input-placeholder {
 }
 
 
+/***********INTERNAS***********/
+.header_internas{
+	background-image: url(../img/TexturaArbolada.png);
+}
+
+.header__boton{
+	position: absolute;
+	top: 0.6%;
+	right:2%;
+}
+
+/*Boton*/
+.boton__interno{
+	background-color: #949CA1;
+	border:2px solid #fff;
+	border-radius: 5px;
+	cursor:pointer;
+	padding: 0.4em 2em;
+	margin-top:1em;
+	text-align: center;
+}
+
+.boton__interno a{
+	color:#fff;
+	font-size:0.7em;
+}
+
+.avances{
+	background-color: #fff;
+	color:#4D5357;
+}
+
+.header_internas .logo__item img{
+	padding: 0.5em 0;
+	width: 40%;
+}
+
+.avances h2{
+	border-bottom: 1px solid #aaa;
+	color:#5B6064;
+	font-size: 2em;
+	font-weight: 700;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+.avances__titulo_mes{
+	color:#949CA1;
+	font-size: 1.8em;
+	font-weight: 800;
+	margin-left: 0.8em;
+	margin-bottom: 1.3em;
+}
+
+.avances__item{
+	margin: 2em 0;
+}
+
+.avances__item h4{
+	font-size: 0.9em;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin-top: 1.5em;
+}	
+
+.avances__item img{
+	width: 100%; 
+}
+
+.contenedor_video{
+	margin-top: 1em;
+}
+
+.info__adicional{
+	background-color: #C7CBCE;
+	color:#4D5357;
+	font-weight: 300;
+}
+
+.info__adicional h4{
+	text-align: center;
+}
+
+.info__adicional p{
+	font-weight: 200;
+	font-size: 0.9em;
+	margin-top: 2em;
+	margin-left: 5%;
+	width: 90%;
+}
+
+
+/***********MEDIA QUERIES**********/
+
 @media screen and (max-width: 768px){
 	.logo__item	img{
 		width: 100%;
 	}
-	/*Boton Header*/
-	.header__boton{
-		right:39%;
-		top:10%;
-	}
-
 
 }
 
@@ -173,7 +315,7 @@ input::-webkit-input-placeholder {
 	}
 
 	.modal-content{
-		height: 90vh;
+		height: 85vh;
 	}
 
 	.modal-content {
@@ -190,12 +332,19 @@ input::-webkit-input-placeholder {
 	}
 
 	.modal-body form{
-		margin-top: 4em;
+		margin-top: 3em;
+	}
+
+	.modal-body img {
+    	margin-left: 0%;
+    	margin-top: 0%;
+    	width: 100%;
 	}
 
 	.modal-body form input{
 		margin-left: 10%;
-		margin-bottom: 3em;
+		margin-bottom: 1em;
+		padding:10px 20px;
 		width:80%;
 	}
 
@@ -209,9 +358,8 @@ input::-webkit-input-placeholder {
 	}
 
  	.modal-body form button{
-		right: 32%;
-		margin-top: 4em;
-		padding: 1em 5em;
+		margin-top: 2em;
+		padding: 1.2em 5em;
 	}
 
 	.modal-body form h4 a {
@@ -220,8 +368,63 @@ input::-webkit-input-placeholder {
 
 	.modal-body form h4 {
        	text-align: center;
-       	margin-top:-1em;
+       	margin: 2em 0;
 	}
 
+	.boton {
+	    padding: 0.9em 1em;
+	    margin-top: 4em;
+	    text-align: center;
+	    width: 76%;
+	    margin-left: 12%;
+	}
+	
+	.boton a {
+    	font-size: 0.9em;
+	}
+
+	.modal-header .close {
+	    margin-right: 0px;
+	}
+
+	.boton__interno{
+		display: none;
+	}
+
+	.header_internas .logo__item img {
+	    padding: 0.5em 0;
+	    width: 70%;
+	}
+
+	.avances h2 {
+	    font-size: 1.5em;
+	}
+
+	.avances h4{
+		text-align: center;
+	}
+
+	.contenedor_video iframe{
+		width: 320px;
+		height: 200px;
+	}
+
+	.modal-header .close{
+	    opacity: 1!important;
+	    margin-top: 2em;
+	    margin-right: -20px;	   
+	    height: 30px;
+	    width: 30px;
+	    font-size: 1em;
+	}
+
+	.contenedor_video {
+    	margin-top: 1em;
+	}
+
+	.modal3 .modal-body form h4, .modal4 .modal-body form h4 {
+	    padding: 0 5em;
+	    line-height: 1.5em;
+	}
 
 }

@@ -12,9 +12,7 @@
 
 <!-- Header-->
 <header>
-	<div class="header__boton boton" data-toggle="modal" data-target="#entrar">
-		<a href="#" >ENTRAR</a>
-	</div>
+	
 </header>
 <!-- /Header-->
 
@@ -23,10 +21,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-xs-12">
-				<div class="logo__item">
-					<img src="img/logo.png" alt="">
-				</div>
+				<div class="logo__item"> 
+					<img src="img/logo_relieve.png" alt="">
+				</div>               
 			</div>
+            <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
+                 <div class="boton" data-toggle="modal" data-target="#entrar">
+                    <a href="#" >ENTRAR</a>
+                </div>
+            </div>
 		</div>
 	</div>
 </section>
@@ -35,14 +38,14 @@
 <!-- Modal -->
 <div class="modal fade" id="entrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content"> 
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close closepeque" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
        
       </div>
       <div class="modal-body">
    	  	<div class="row">
-   	  		 <h3>ENTRAR A VER LOS AVANCES DEL CONJUNTO</h3>
+   	  		<img src="img/logo.png" alt="">
     		<div class="col-md-10 col-md-offset-1 col-xs-12">
 
 				<form action="#">
@@ -54,11 +57,73 @@
     					<label for="#">Contraseña</label>
     					<input type="password" placeholder="*********"><i class="glyphicon glyphicon-lock"></i>
     				</div>
-    				<h4><a href="#">Olvide mi contraseña</a></h4>
-    				<button>Entrar</button>
+    				<h4><a href="#" data-toggle="modal" data-target="#olvidoContrasena">Olvide mi contraseña</a></h4>
+                    <div class="col-md-2 col-md-offset-8 col-xs-6 col-xs-offset-3">
+    				    <button><a href="avances.html">Entrar</a></button>
+                    </div>
     			</form>
     		</div>
     	</div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal OLVIDE MI CONTRASEÑA -->
+<div class="modal modal3 fade" id="olvidoContrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+      <div class="modal-header">
+        <button type="button" class="close closepeque" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <img src="img/logo.png" alt="">
+            <div class="col-md-10 col-md-offset-1 col-xs-12">
+                <h3>RECUPERAR CONTRASEÑA</h3>
+                <form action="#">
+                    <div class="form-group">                        
+                        <label for="#">Correo Registrado</label>
+                        <input type="text" placeholder="johndoe@mail.com"><i class="glyphicon glyphicon-user"></i></input>                      
+                    </div>
+                    <h4>Enviaremos una nueva contraseña al correo registrado</h4>
+                    <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
+                        <button><a href="#" data-toggle="modal" data-target="#envio">Enviar</a></button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Modal SE HA ENVIADO CONTRASEÑA -->
+<div class="modal modal4 fade" id="envio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+      <div class="modal-header">
+        <button type="button" class="close closepeque" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <img src="img/logo.png" alt="">
+            <div class="col-md-10 col-md-offset-1 col-xs-12">
+                <h3>RECUPERAR CONTRASEÑA</h3>
+                <form action="#">
+                    
+                    <h4>Se ha enviado una nueva contraseña al correo registrado. ¡GRACIAS!</h4>
+                    <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
+                        <button><a href="avances.html" >Cerrar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
       </div>
      
     </div>
