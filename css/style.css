@@ -10,6 +10,10 @@ body{
 	overflow-x: hidden;
 }
 
+.logo{
+/*	min-height: 100vh;*/
+}
+
 .contenedor{
 	padding: 2em 0;
 }
@@ -50,6 +54,7 @@ body{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    
 }
 
 .logo__item{
@@ -307,15 +312,16 @@ input::-webkit-input-placeholder {
 		width: 100%;
 	}
 
-}
-
-@media screen and (max-width: 480px){
 	.modal-dialog {
     	width: 94%!important;    	
 	}
 
-	.modal-content{
-		height: 85vh;
+}
+
+@media screen and (max-width: 480px){
+	
+	.modal-dialog {
+    	width: 94%!important;    	
 	}
 
 	.modal-content {
@@ -323,7 +329,12 @@ input::-webkit-input-placeholder {
    	}
 
 	.modal{
-		top:5vh!important;
+		top:0vh!important;
+		height: 100vh;
+	}
+
+	.modal-body {
+	    padding-bottom: 5em;
 	}
 
 	.modal-body h3 {
@@ -368,7 +379,7 @@ input::-webkit-input-placeholder {
 
 	.modal-body form h4 {
        	text-align: center;
-       	margin: 2em 0;
+       	margin: 1em 0;
 	}
 
 	.boton {
